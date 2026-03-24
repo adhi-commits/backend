@@ -1,0 +1,63 @@
+--- USERS ---
+[
+  {
+    "id": 1,
+    "name": "johny depp",
+    "email": "johnydepp@gmail.com",
+    "role": "organizer"
+  },
+  {
+    "id": 2,
+    "name": "tony stark",
+    "email": "tonystark@gmail.com",
+    "role": "volunteer"
+  },
+  {
+    "id": 3,
+    "name": "john wick",
+    "email": "johnwick@gmail.com",
+    "role": "volunteer"
+  },
+  {
+    "id": 4,
+    "name": "ajith joe",
+    "email": "ajith@gmail.com",
+    "role": "volunteer"
+  }
+]
+
+--- REGISTRATIONS ---
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "campaign_id": 1,
+    "status": "Approved",
+    "registered_at": "2026-02-15T21:35:39.000Z"
+  },
+  {
+    "id": 2,
+    "user_id": 3,
+    "campaign_id": 1,
+    "status": "Approved",
+    "registered_at": "2026-02-16T05:10:52.000Z"
+  }
+]
+
+--- CERTIFICATES ---
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "campaign_id": 1,
+    "image_url": "1771209088667-327705817.jpg",
+    "issued_at": "2026-02-16T02:31:28.000Z"
+  },
+  {
+    "id": 2,
+    "user_id": 3,
+    "campaign_id": 1,
+    "image_url": "1771219760141-131075489.jpg",
+    "issued_at": "2026-02-16T05:29:20.000Z"
+  }
+]

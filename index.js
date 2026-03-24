@@ -4,6 +4,9 @@ require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
 const campaignRoutes = require('./routes/campaigns');
+const feedbackRoutes = require('./routes/feedback');
+const adminRoutes = require('./routes/admin');
+const messageRoutes = require('./routes/messages');
 const pool = require('./config/db');
 
 const app = express();
@@ -16,6 +19,11 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/campaigns', campaignRoutes);
+app.use('/api/certificates', require('./routes/certificates'));
+app.use('/api/feedback', feedbackRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/messages', messageRoutes);
+app.use('/uploads', express.static('uploads'));
 
 app.get('/', (req, res) => {
     res.send('Volunteer Hub API is running...');
